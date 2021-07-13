@@ -1,0 +1,22 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "1836-crud_js_async project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarlandLohora/1836-CRUD_JS_Async.git"
+  },
+  "keywords": [
+    "Alura"
+  ],
+  "author": "Harland Lohora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarlandLohora/1836-CRUD_JS_Async/issues"
+  },
+  "homepage": "https://github.com/HarlandLohora/1836-CRUD_JS_Async#readme"
+}

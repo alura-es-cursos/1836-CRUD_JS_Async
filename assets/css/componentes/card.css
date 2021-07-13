@@ -1,0 +1,15 @@
+.card {
+  background-color: var(--contrast-ligth-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 45rem;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  font-size: var(--font-size-card-title);
+  margin-bottom: 1rem;
+}

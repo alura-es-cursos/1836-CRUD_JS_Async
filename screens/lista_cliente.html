@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doguito Petshop | Clientes</title>
+    <link rel="icon" href="../assets/img/doguitoadm.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/header.css" />
+    <link rel="stylesheet" href="../assets/css/lista_cliente.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/table.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/button.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/modal.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <img
+        src="../assets/img/doguitoadm.svg"
+        alt="Logotipo Doguito"
+        class="header__logo"
+      />
+      <nav>
+        <ul class="header__list-nav">
+          <li class="header__link"><a href="#">Dashboard</a></li>
+          <li class="header__link"><a href="#">Productos</a></li>
+          <li class="header__link"><a href="#">Clientes</a></li>
+          <li class="header__link"><a href="#">Pets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="clientes-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="table__column--p">Nombre</th>
+            <th class="table__column--g">Email</th>
+            <th class="table__column--m table__align--right">
+              <a
+                href="./registrar_cliente.html"
+                class="simple-button simple-button--add"
+                >Nuevo Cliente</a
+              >
+            </th>
+          </tr>
+        </thead>
+        <tbody data-table>
+          <td class="td" data-td>Gabriela</td>
+          <td>gabriela@alura.com</td>
+          <td>
+            <ul class="table__button-control">
+              <li>
+                <a
+                  href="../screens/editar_cliente.html"
+                  class="simple-button simple-button--edit"
+                  >Editar</a
+                >
+              </li>
+              <li>
+                <button
+                  class="simple-button simple-button--delete"
+                  type="button"
+                >
+                  Eliminar
+                </button>
+              </li>
+            </ul>
+          </td>
+        </tbody>
+      </table>
+      <div class="modal-container modal--close">
+        <article class="modal">
+          <h2 class="modal__title">Eliminar</h2>
+          <button class="modal__close">X</button>
+          <p class="modal__text">¿Deseas continuar?</p>
+          <div class="modal__button-container">
+            <button class="modal__button modal__button--confirm">
+              Eliminar
+            </button>
+            <button class="modal__button">No eliminar</button>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
