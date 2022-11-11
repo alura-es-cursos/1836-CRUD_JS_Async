@@ -41,11 +41,11 @@ const table = document.querySelector("[data-table]");
 const listaClientes = () => {
   const promise = new Promise((resolve, reject) => {
     const http = new XMLHttpRequest();
-    http.open("GET", "http://localhost:3000/perfiles");
+    http.open("GET", "http://localhost:3000/perfil");
 
-    http.send();
+    http.send(); //se encarga de enviar la peticion
 
-    http.onload = () => {
+    http.onload = () => {   //una vez que cargue, se ejecuta esta funcion
       const response = JSON.parse(http.response);
       if (http.status >= 400) {
         reject(response);
