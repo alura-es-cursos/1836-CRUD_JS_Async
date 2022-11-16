@@ -4,6 +4,16 @@
       "nombre": "Ignacia",
       "email": "Ignacia@alura.com",
       "id": 1
+    },
+    {
+      "nombre": "pedro",
+      "email": "pedro@alura.com",
+      "id": "4d76b2cb-ab5b-434d-aadc-c708a0a39685"
+    },
+    {
+      "nombre": "sofia",
+      "email": "sofia@alura.com",
+      "id": "3e93588b-78f4-4e30-bcba-8e9f10ad198f"
     }
   ]
 }
