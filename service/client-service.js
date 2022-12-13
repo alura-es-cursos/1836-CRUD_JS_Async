@@ -41,30 +41,32 @@ const table = document.querySelector("[data-table]");
 const listaClientes = () => {
   const promise = new Promise((resolve, reject) => {
     const http = new XMLHttpRequest();
-    http.open("GET", "http://localhost:3000/perfiles");
+    http.open("GET", "http://localhost:3000/perfil");
 
     http.send();
 
     http.onload = () => {
       const response = JSON.parse(http.response);
-      if (http.status >= 400) {
+      if (http >= 400) {
         reject(response);
       } else {
         resolve(response);
       }
-    };
-  });
-  return promise;
+    }
+    
+  })
+  return promise
 };
 
-listaClientes()
-  .then((data) => {
+listaClientes().then((data) => {
     data.forEach((perfil) => {
       const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
       table.appendChild(nuevaLinea);
     });
-  })
-  .catch((error) => alert("Ocurrió un error"));
 
-// console.log(data);
-//
+
+}).catch((error)=>alert("Ocurrio un error"))
+    
+  
+  
+
